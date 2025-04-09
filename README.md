@@ -5,6 +5,7 @@
         Sujet: Détection de fake news avec IA.
 
 1. Objectifs du Projet
+   
 But principal : Développer une solution intelligente capable de détecter les fake news à partir des textes issus des actualités.
 
 Sous-objectifs :
@@ -20,7 +21,9 @@ Intégrer la solution dans un outil pratique (plugin navigateur ou bot Twitter).
 Tester et généraliser la solution sur diverses sources d’actualité avec une boucle de feedback pour l’amélioration continue.
 
 2. Décomposition par Étapes du Projet
+   
 a. Prompter : Définir les Critères de Classification
+
 Établir une Taxonomie :
 
 Identifier les éléments caractéristiques des fake news (par exemple, absence de sources fiables, tonalité sensationnaliste, incohérences factuelles, etc.).
@@ -32,6 +35,7 @@ Recherche Documentaire :
 Consulter des études de cas et des articles scientifiques sur la détection de fake news pour s’inspirer des critères retenus par la communauté (cette étape peut inclure la consultation de ressources comme des revues académiques et des tutoriels en ligne).
 
 b. Modéliser : Entraînement d’un Modèle NLP
+
 Choix du Dataset :
 
 Identifier ou constituer un corpus de données de fact-checking et de nouvelles vérifiées.
@@ -51,6 +55,7 @@ Configurer un pipeline d’entraînement avec validation croisée pour éviter l
 Mettre en place des métriques d’évaluation pertinentes (précision, rappel, F1-score) afin de suivre les performances du modèle.
 
 c. Processer : Extraction et Vectorisation des Textes de News
+
 Prétraitement des Données :
 
 Nettoyer les textes (suppression des balises HTML, des stop-words, des signes de ponctuation inutiles, etc.).
