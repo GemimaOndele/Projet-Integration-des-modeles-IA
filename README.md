@@ -114,4 +114,4 @@ Mettre en place des dashboards pour suivre les indicateurs de performance en tem
 
 Évaluer l’impact des mises à jour et mettre en place des A/B tests pour comparer les versions successives du modèle.
 
-Ce projet a été réalisé par @Hubert CHAVASSE, @Hadrien LENNON, @Mohamed GHARMAOUI, @Gemima ONDELE POUROU et @Niangoran Esther BOKA.
+Ce projet a été réalisé par **@Hubert CHAVASSE, @Hadrien LENNON, @Mohamed GHARMAOUI, @Gemima ONDELE POUROU et @Niangoran Esther BOKA.**
