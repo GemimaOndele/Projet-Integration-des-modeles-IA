@@ -1,5 +1,6 @@
-#Projet-Intégration-des-modèles-IA
-Un projet autour de la matière intégration des modèles IA
+**Projet-Intégration-des-modèles-IA**
+
+**Un projet autour de la matière intégration des modèles IA**
 
         Sujet: Détection de fake news avec IA.
 
