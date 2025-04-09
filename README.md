@@ -4,11 +4,11 @@
 
         Sujet: Détection de fake news avec IA.
 
-1. Objectifs du Projet
+**1. Objectifs du Projet**
    
 But principal : Développer une solution intelligente capable de détecter les fake news à partir des textes issus des actualités.
 
-Sous-objectifs :
+**Sous-objectifs :**
 
 Définir des critères précis pour distinguer les fake news des informations vérifiées.
 
@@ -20,9 +20,9 @@ Intégrer la solution dans un outil pratique (plugin navigateur ou bot Twitter).
 
 Tester et généraliser la solution sur diverses sources d’actualité avec une boucle de feedback pour l’amélioration continue.
 
-2. Décomposition par Étapes du Projet
+**2. Décomposition par Étapes du Projet**
    
-a. Prompter : Définir les Critères de Classification
+**a. Prompter : Définir les Critères de Classification**
 
 Établir une Taxonomie :
 
@@ -34,7 +34,7 @@ Recherche Documentaire :
 
 Consulter des études de cas et des articles scientifiques sur la détection de fake news pour s’inspirer des critères retenus par la communauté (cette étape peut inclure la consultation de ressources comme des revues académiques et des tutoriels en ligne).
 
-b. Modéliser : Entraînement d’un Modèle NLP
+**b. Modéliser : Entraînement d’un Modèle NLP**
 
 Choix du Dataset :
 
@@ -54,7 +54,7 @@ Configurer un pipeline d’entraînement avec validation croisée pour éviter l
 
 Mettre en place des métriques d’évaluation pertinentes (précision, rappel, F1-score) afin de suivre les performances du modèle.
 
-c. Processer : Extraction et Vectorisation des Textes de News
+**c. Processer : Extraction et Vectorisation des Textes de News**
 
 Prétraitement des Données :
 
@@ -68,7 +68,8 @@ Convertir les textes en vecteurs à l’aide de techniques comme TF-IDF, word em
 
 Explorer d’éventuelles enrichissements tels que l’extraction de caractéristiques sentimentales ou syntactiques.
 
-d. Robotiser : Intégration dans une Application
+**d. Robotiser : Intégration dans une Application**
+
 Choix de la Plateforme :
 
 Plugin navigateur : Développer une extension (par exemple en JavaScript) qui envoie les articles à analyser à l’API de ton modèle.
@@ -87,7 +88,8 @@ Interface Utilisateur :
 
 Concevoir une interface simple pour visualiser la probabilité qu’un article soit une fake news (par exemple, un score ou une alerte en temps réel).
 
-e. Généraliser : Tester sur Différentes Sources d’Actualité
+**e. Généraliser : Tester sur Différentes Sources d’Actualité**
+
 Évaluation sur des Jeux de Données Diversifiés :
 
 Tester le modèle avec des articles provenant de différents sites d’information, blogs ou réseaux sociaux.
@@ -98,7 +100,8 @@ Itérations et Ajustements :
 
 En fonction des tests, affiner les critères définis en phase de prompter et réajuster le modèle ou le prétraitement si nécessaire.
 
-f. Data-driven : Amélioration Continue via Feedback
+**f. Data-driven : Amélioration Continue via Feedback**
+
 Mise en place d’un Système de Feedback :
 
 Intégrer un mécanisme permettant aux utilisateurs finaux (ou aux testeurs) de signaler de fausses classifications, d’ajouter des commentaires ou de fournir des évaluations.
