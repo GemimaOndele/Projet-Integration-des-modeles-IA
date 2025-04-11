@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.vscode/
+python311/
+Lib/
+share/
+pyvenv.cfg
+*.h5
+*.pkl
+.DS_Store
+.ipynb_checkpoints/
