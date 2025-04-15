@@ -38,11 +38,14 @@ with st.form("feedback_form"):
             "feedback": "Correct" if feedback_correct == "Oui" else "Incorrect",
             "comment": comment
         }
-        feedback_df = feedback_df.append(new_feedback, ignore_index=True)
+        # ✅ Remplace append obsolète par concat
+        feedback_df = pd.concat([feedback_df, pd.DataFrame([new_feedback])], ignore_index=True)
+        
         # Sauvegarder dans un fichier CSV
         os.makedirs("results", exist_ok=True)
         feedback_df.to_csv(feedback_file, index=False)
         st.success("Feedback enregistré avec succès !")
+
 
 # Section Dashboard pour visualiser les feedbacks
 st.header("Dashboard de Feedback")
