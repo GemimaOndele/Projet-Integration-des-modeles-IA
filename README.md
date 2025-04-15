@@ -9,7 +9,7 @@ Ce projet permet de détecter si une news est vraie ou fausse à l’aide d’un
 - `data/`: Données nettoyées
 - `model/`: Modèle entraîné et TF-IDF vectorizer
 - `scripts/`: Scripts de préparation
-- `app.py`: Interface Streamlit
+- `interface.py`: Interface Streamlit
 
 ## ⚙️ Lancer l’application
 
