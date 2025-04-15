@@ -22,7 +22,7 @@ streamlit run feeback_dashboard.py #commande pour lancer l'interface du dashboar
 
  uvicorn main:app --reload #commmande pour Lancer l'api FastAPI
 
-🔗 https://sites.google.com/chromium.org/driver/ #Télécharger le web driver
+🔗 https://sites.google.com/chromium.org/driver/ #Télécharger le web driver, cette extension est utile pour faire le scrapping des nouveaux articles afin de tester les modèles.
 
 
 
