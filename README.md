@@ -20,10 +20,15 @@ pip install -r requirements.txt #Pour installer toutes librairies du projet
 
 uvicorn main:app --reload #commmande pour Lancer l'api FastAPI, il joue aussi le role d'n serveur pour les deux interfaces.
 
+http://127.0.0.1:8000/ #Après avoir lancer l'API, il tourne dans le port 80, c'est lien de l'api FastAPI
+
 streamlit run interface.py #commande pour lancer l'interface pour la détection des fakesnews
+
+http://localhost:8501/ #Après avoir lancer l'interface de détection des fakes news, il tourne dans port 85, c'est lien de l'interface interface.py
 
 streamlit run feeback_dashboard.py #commande pour lancer l'interface du dashboard des feedback
 
+http://localhost:8502/ #Après avoir lancer l'interface du système des feebacks, il tourne dans port 8502, c'est lien de l'interface feeback_dashboard.py
  
 
 🔗 https://sites.google.com/chromium.org/driver/ #Télécharger le web driver, cette extension est utile pour faire le scrapping des nouveaux articles afin de tester les modèles.
