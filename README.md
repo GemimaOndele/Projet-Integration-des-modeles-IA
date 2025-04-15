@@ -18,7 +18,7 @@ Ce projet permet de détecter si une news est vraie ou fausse à l’aide d’un
 ```bash
 pip install -r requirements.txt #Pour installer toutes librairies du projet
 
-uvicorn main:app --reload #commmande pour Lancer l'api FastAPI, il joue aussi le role d'n serveur pour les deux interfaces.
+uvicorn main:app --reload #commmande pour Lancer l'api FastAPI, il joue aussi le role d'un serveur pour les deux interfaces.
 
 http://127.0.0.1:8000/ #Après avoir lancer l'API, il tourne dans le port 80, c'est lien de l'api FastAPI
 
