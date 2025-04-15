@@ -20,6 +20,7 @@ streamlit run app.py #commande pour lancer l'interface
 
 uvicorn api:app --reload #commmande pour Lancer l'api
 
+🔗 https://sites.google.com/chromium.org/driver/ #Télécharger le web drive
 
 
 
