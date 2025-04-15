@@ -9,7 +9,9 @@ Ce projet permet de détecter si une news est vraie ou fausse à l’aide d’un
 - `data/`: Données nettoyées
 - `model/`: Modèle entraîné et TF-IDF vectorizer
 - `scripts/`: Scripts de préparation
-- `interface.py`: Interface Streamlit
+- `interface.py`: Interface Streamlit pour la détection des fakes news et le choix des modèles de test.
+- `feedback_dashboard.py`: Interface Streamlit du tableau de board pour le sytèmes des feedbacks
+- `main.py`: Fichier de l'api FastAPI
 
 ## ⚙️ Lancer l’application
 
