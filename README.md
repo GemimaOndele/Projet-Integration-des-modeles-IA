@@ -16,7 +16,7 @@ Ce projet permet de détecter si une news est vraie ou fausse à l’aide d’un
 ```bash
 pip install -r requirements.txt
 
-streamlit run app.py #commande pour lancer l'interface
+streamlit run interface.py #commande pour lancer l'interface
 
 uvicorn api:app --reload #commmande pour Lancer l'api
 
