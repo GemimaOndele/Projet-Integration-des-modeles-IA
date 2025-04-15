@@ -1,5 +1,29 @@
 **Projet-Intégration-des-modèles-IA**
 
+# Fake News Detector 📰🚫
+
+Ce projet permet de détecter si une news est vraie ou fausse à l’aide d’un modèle IA entraîné sur un corpus nettoyé de fausses et vraies actualités.
+
+## 📁 Structure
+
+- `data/`: Données nettoyées
+- `model/`: Modèle entraîné et TF-IDF vectorizer
+- `scripts/`: Scripts de préparation
+- `app.py`: Interface Streamlit
+
+## ⚙️ Lancer l’application
+
+```bash
+pip install -r requirements.txt
+
+streamlit run app.py #commande pour lancer l'interface
+
+uvicorn api:app --reload #commmande pour Lancer l'api
+
+
+
+
+**Détails du projet ** :
 **Un projet autour de la matière intégration des modèles IA**
 
         Sujet: Détection de fake news avec IA.

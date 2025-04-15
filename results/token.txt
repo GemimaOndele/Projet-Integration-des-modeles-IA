@@ -1,0 +1,3 @@
+hugging face token = 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
+
+wandb token api = 1851e5b6b7d9be1cb372f242c4d69d0f0f28432b
