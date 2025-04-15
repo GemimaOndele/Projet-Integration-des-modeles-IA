@@ -14,11 +14,13 @@ Ce projet permet de détecter si une news est vraie ou fausse à l’aide d’un
 ## ⚙️ Lancer l’application
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt #Pour installer toutes librairies du projet
 
-streamlit run interface.py #commande pour lancer l'interface
+streamlit run interface.py #commande pour lancer l'interface pour la détection des fakesnews
 
-uvicorn api:app --reload #commmande pour Lancer l'api
+streamlit run feeback_dashboard.py #commande pour lancer l'interface du dashboard des feedback
+
+ uvicorn main:app --reload #commmande pour Lancer l'api FastAPI
 
 🔗 https://sites.google.com/chromium.org/driver/ #Télécharger le web driver
 
