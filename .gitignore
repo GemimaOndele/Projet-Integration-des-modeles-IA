@@ -12,3 +12,4 @@ pyvenv.cfg
 .DS_Store
 .ipynb_checkpoints/
 data/fake_news_cleaned.csv
+data/fake_news_cleaned.csv
