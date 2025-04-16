@@ -14,7 +14,7 @@ bert_model = pipeline("text-classification", model="bert-base-uncased")
 rf_model = joblib.load("model/fake_news_random_forest_classifier.pkl")
 xgb_model = joblib.load("model/xgboost_fake_news.pkl")
 vectorizer = joblib.load("model/tfidf_vectorizer.pkl")
-gradient_boosting = joblib.load("model/gradient_fake_news.pkl")
+gradient_boosting = joblib.load("model/gradient_boosting_fake_news.pkl")
 
 app = FastAPI()
 
