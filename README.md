@@ -16,6 +16,9 @@ Ce projet permet de détecter si une news est vraie ou fausse à l’aide d’un
 ## ⚙️ Lancer l’application
 
 ```bash
+
+activate ou .\.venv\Scripts\activate #Commandes windows dans le terminal powershell de vscode du projet pour activer l'environement virtuel du dossier ".venv"
+
 pip install -r requirements.txt #Pour installer toutes librairies du projet
 
 uvicorn main:app --reload #commmande pour Lancer l'api FastAPI, il joue aussi le role d'un serveur pour les deux interfaces.
