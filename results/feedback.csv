@@ -1,2 +1,3 @@
 timestamp,model,text,predicted,feedback,comment
 2025-04-15T23:56:09.884297,bert,Donald trump n'est pas président,Fake,Incorrect,je n'aime pas
+2025-04-16T12:07:16.500713,bert,Cristiano ronaldo est footballeur,Fake,Incorrect,Ce n'est pas vrai
