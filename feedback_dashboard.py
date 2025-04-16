@@ -19,7 +19,7 @@ st.header("Envoyer un signalement")
 with st.form("feedback_form"):
     st.write("Veuillez signaler si la prédiction affichée semble incorrecte.")
     
-    model_used = st.selectbox("Modèle utilisé", ["bert", "randomforest", "xgboost"])
+    model_used = st.selectbox("Modèle utilisé", ["bert", "randomforest", "xgboost", "gradient_boosting"])
     original_text = st.text_area("Texte analysé", "")
     predicted_label = st.selectbox("Prédiction affichée", ["Fake", "Real"])
     feedback_correct = st.radio("Le résultat était-il correct ?", ("Oui", "Non"))
