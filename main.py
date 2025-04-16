@@ -14,13 +14,13 @@ bert_model = pipeline("text-classification", model="bert-base-uncased")
 rf_model = joblib.load("model/fake_news_random_forest_classifier.pkl")
 xgb_model = joblib.load("model/xgboost_fake_news.pkl")
 vectorizer = joblib.load("model/tfidf_vectorizer.pkl")
-gradient_boosting = joblib.load("model/gradient_boosting_fake_news.pkl")
+gradient_boosting_model = joblib.load("model/gradient_boosting_fake_news.pkl")
 
 app = FastAPI()
 
 class NewsInput(BaseModel):
     text: str
-    model: str  # "bert", "randomforest", "xgboost"
+    model: str  # "bert", "randomforest", "xgboost", "gradientboosting"
 
 @app.get("/")
 def home():
@@ -51,6 +51,15 @@ def predict_news(input_data: NewsInput):
         vectorized = vectorizer.transform([cleaned])
         prediction = xgb_model.predict(vectorized)[0]
         proba = xgb_model.predict_proba(vectorized)[0].tolist()
+        return {
+            "prediction": "FAKE" if prediction == 1 else "REAL",
+            "probabilities": {"FAKE": round(proba[1], 3), "REAL": round(proba[0], 3)}
+        }
+
+    elif input_data.model.lower() == "gradientboosting":
+        vectorized = vectorizer.transform([cleaned])
+        prediction = gradient_boosting_model.predict(vectorized)[0]
+        proba = gradient_boosting_model.predict_proba(vectorized)[0].tolist()
         return {
             "prediction": "FAKE" if prediction == 1 else "REAL",
             "probabilities": {"FAKE": round(proba[1], 3), "REAL": round(proba[0], 3)}
