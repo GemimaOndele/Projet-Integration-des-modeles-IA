@@ -30,7 +30,7 @@ def predict(text, model_choice):
     return response.json()
 
 # Choisir le modèle à utiliser
-model_choice = st.selectbox("Choisissez le modèle de détection", ["randomforest", "xgboost", "bert"])
+model_choice = st.selectbox("Choisissez le modèle de détection", ["randomforest", "xgboost", "bert", "gradient_boosting"])
 
 # Affichage des résultats
 if st.button("Analyser"):
